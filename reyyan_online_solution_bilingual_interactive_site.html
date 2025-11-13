@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reyyan Online Solution — Government & Digital Services</title>
+  <meta name="description" content="Reyyan Online Solution - Apply for PAN, Passport, Aadhar, and all government services. Support in Hindi & English. Contact: 9304833905" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <style>
+    :root{--accent:#2563eb;--bg:#f8fafc;--card:#ffffff;--muted:#4b5563}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#0f172a}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,0.8);backdrop-filter:blur(6px);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:white;font-weight:700}
+    nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+    nav a{color:inherit;text-decoration:none;font-weight:600}
+    .cta{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+    .lang-switch{border:1px solid #e6edf3;padding:6px 10px;border-radius:8px;background:white;cursor:pointer}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:center;padding:36px 0}
+    h1{font-size:clamp(26px,4vw,40px);margin:0}
+    .lead{color:var(--muted);margin:10px 0}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+    .services .item{padding:12px;border-radius:10px;border:1px solid #eef2f7}
+    .apply-btn{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:8px;background:#25D366;color:white;text-decoration:none}
+    .about{display:flex;gap:18px;align-items:center;margin:28px 0}
+    .about img{width:260px;border-radius:10px}
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6edf3;font-size:14px}
+    button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:0;cursor:pointer}
+    footer{padding:20px 0;color:var(--muted);font-size:14px}
+    .toggle{display:inline-flex;gap:6px;align-items:center}
+    .guide h3{margin-top:0}
+    .hide{display:none}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.about{flex-direction:column}.nav ul{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">R</div>
+        <div>
+          <div style="font-weight:800">Reyyan Online Solution</div>
+          <div style="font-size:13px;color:var(--muted)">Your trusted partner for Government & Digital Services</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:10px;align-items:center">
+        <div class="lang-switch toggle" id="langToggle">English / हिन्दी</div>
+        <a class="cta" href="#contact">Contact</a>
+        <a class="cta" id="applyTop" href="#" style="background:#25D366">Apply Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div>
+        <h1 data-en>Fast, Trusted Help to Apply Online</h1>
+        <h1 class="hide" data-hi>ऑनलाइन आवेदन में तेज़ और भरोसेमंद सहायता</h1>
+        <p class="lead" data-en>Reyyan Online Solution helps individuals apply for PAN, Passport, Aadhar updates, and more — in English and Hindi. Click Apply to start on WhatsApp.</p>
+        <p class="lead hide" data-hi>Reyyan Online Solution PAN, Passport, Aadhar और अन्य सेवाओं के लिए आवेदन में मदद करता है — अंग्रेज़ी और हिन्दी में। Apply पर क्लिक करें और WhatsApp से शुरू करें।</p>
+
+        <div style="display:flex;gap:12px;margin-top:12px">
+          <a id="applyBtn" class="apply-btn" href="#">Apply Now / आवेदन करें</a>
+          <a class="cta" href="#services" style="background:var(--accent);">Our Services / हमारी सेवाएँ</a>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div style="font-size:14px;color:var(--muted)" data-en>Why choose Reyyan?</div>
+          <div style="font-size:14px;color:var(--muted)" data-hi class="hide">Reyyan क्यों चुनें?</div>
+          <div class="grid" style="margin-top:12px">
+            <div class="services item"><strong data-en>Quick</strong><br><span data-en class="lead">Fast processing steps and guidance.</span><span data-hi class="lead hide">तेज़ प्रक्रिया और मार्गदर्शन।</span></div>
+            <div class="services item"><strong data-en>Support</strong><br><span data-en class="lead">Help in Hindi & English.</span><span data-hi class="lead hide">हिन्दी और अंग्रेज़ी में सहायता।</span></div>
+            <div class="services item"><strong data-en>Trusted</strong><br><span data-en class="lead">Transparent pricing & secure handling.</span><span data-hi class="lead hide">पारदर्शी शुल्क और सुरक्षित प्रक्रिया।</span></div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 data-en>Start your application</h3>
+          <h3 data-hi class="hide">अपना आवेदन शुरू करें</h3>
+          <p data-en style="color:var(--muted)">Click the Apply button — it will open WhatsApp with a prefilled message to our number.</p>
+          <p data-hi style="color:var(--muted)" class="hide">Apply बटन पर क्लिक करें — यह हमारी WhatsApp संख्या पर तैयार संदेश के साथ खुलेगा।</p>
+          <div style="margin-top:12px">
+            <a class="apply-btn" id="applyWhats" href="#">Apply via WhatsApp</a>
+          </div>
+          <div style="margin-top:12px;color:var(--muted)">
+            <div><strong>Phone / फोन:</strong> 9304833905</div>
+            <div><strong>Email / ईमेल:</strong> ansarihak40@gmail.com</div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="services">
+      <h2 data-en>Our Services</h2>
+      <h2 data-hi class="hide">हमारी सेवाएँ</h2>
+      <div class="grid" style="margin-top:12px">
+        <div class="card services item">
+          <h3 data-en>PAN Card Apply</h3>
+          <h3 data-hi class="hide">PAN कार्ड आवेदन</h3>
+          <p data-en class="lead">Step-by-step application help for new PAN and corrections.</p>
+          <p data-hi class="lead hide">नया PAN और सुधारों के लिए चरण-दर-चरण सहायता।</p>
+          <div style="margin-top:8px"><a class="apply-btn service-apply" href="#">Apply / आवेदन करें</a></div>
+        </div>
+
+        <div class="card services item">
+          <h3 data-en>Passport Apply</h3>
+          <h3 data-hi class="hide">पासपोर्ट आवेदन</h3>
+          <p data-en class="lead">Guidance for fresh passport and renewal.</p>
+          <p data-hi class="lead hide">नए पासपोर्ट और नवीनीकरण के लिए मार्गदर्शन।</p>
+          <div style="margin-top:8px"><a class="apply-btn service-apply" href="#">Apply / आवेदन करें</a></div>
+        </div>
+
+        <div class="card services item">
+          <h3 data-en>Aadhar Update</h3>
+          <h3 data-hi class="hide">आधार अपडेट</h3>
+          <p data-en class="lead">Help to update address, name, or mobile linking.</p>
+          <p data-hi class="lead hide">पता, नाम या मोबाइल लिंकिंग अपडेट में सहायता।</p>
+          <div style="margin-top:8px"><a class="apply-btn service-apply" href="#">Apply / आवेदन करें</a></div>
+        </div>
+
+        <div class="card services item">
+          <h3 data-en>Birth / Income / Voter ID / Driving License</h3>
+          <h3 data-hi class="hide">जन्म / आय / वोटर आईडी / ड्राइविंग लाइसेंस</h3>
+          <p data-en class="lead">All civil documents and certificates.</p>
+          <p data-hi class="lead hide">सभी नागरिक दस्तावेज और प्रमाणपत्र।</p>
+          <div style="margin-top:8px"><a class="apply-btn service-apply" href="#">Apply / आवेदन करें</a></div>
+        </div>
+
+        <div class="card services item">
+          <h3 data-en>Ration Card / CSC / Online Form Filling</h3>
+          <h3 data-hi class="hide">राशन कार्ड / CSC / ऑनलाइन फॉर्म भरना</h3>
+          <p data-en class="lead">Local services, government schemes & digital seva support.</p>
+          <p data-hi class="lead hide">स्थानीय सेवाएँ, सरकारी योजनाएँ और डिजिटल सेवा सहायता।</p>
+          <div style="margin-top:8px"><a class="apply-btn service-apply" href="#">Apply / आवेदन करें</a></div>
+        </div>
+
+        <div class="card services item">
+          <h3 data-en>Tickets / Recharge / Bill Payment</h3>
+          <h3 data-hi class="hide">टिकट / रिचार्ज / बिल भुगतान</h3>
+          <p data-en class="lead">Rail/Flight bookings and online payments assistance.</p>
+          <p data-hi class="lead hide">रेल/विमान बुकिंग और ऑनलाइन भुगतान सहायता।</p>
+          <div style="margin-top:8px"><a class="apply-btn service-apply" href="#">Apply / आवेदन करें</a></div>
+        </div>
+
+        <div class="card services item">
+          <h3 data-en>All Government & Online Services</h3>
+          <h3 data-hi class="hide">सभी सरकारी और ऑनलाइन सेवाएँ</h3>
+          <p data-en class="lead">If it's online, we can help you apply and complete it securely.</p>
+          <p data-hi class="lead hide">यदि यह ऑनलाइन है, तो हम सुरक्षित रूप से आवेदन करने में मदद कर सकते हैं।</p>
+          <div style="margin-top:8px"><a class="apply-btn service-apply" href="#">Apply / आवेदन करें</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides" style="margin-top:26px">
+      <h2 data-en>Guides / मार्गदर्शिका</h2>
+      <div class="grid" style="margin-top:12px">
+        <div class="card guide">
+          <h3 data-en>PAN Card — How to Apply</h3>
+          <h3 data-hi class="hide">PAN कार्ड — कैसे आवेदन करें</h3>
+          <ol>
+            <li data-en>Visit the official NSDL or UTIITSL portal and choose 'Apply for PAN'.</li>
+            <li data-en>Fill the form (Name, DOB, Address) and upload required documents (ID, Address proof).</li>
+            <li data-en>Pay fee online and note the acknowledgement number.</li>
+            <li data-en>We can help fill and submit — click Apply to start on WhatsApp.</li>
+            <li data-hi class="hide">आधिकारिक NSDL या UTIITSL पोर्टल पर जाएँ और 'Apply for PAN' चुनें।</li>
+            <li data-hi class="hide">फॉर्म भरें और आवश्यक दस्तावेज़ अपलोड करें (ID, Address प्रमाण)।</li>
+            <li data-hi class="hide">फीस का भुगतान करें और acknowlegdement नंबर नोट करें।</li>
+            <li data-hi class="hide">हम मदद कर सकते हैं — WhatsApp पर शुरू करने के लिए Apply करें।</li>
+          </ol>
+        </div>
+
+        <div class="card guide">
+          <h3 data-en>Passport — How to Apply</h3>
+          <h3 data-hi class="hide">पासपोर्ट — कैसे आवेदन करें</h3>
+          <ol>
+            <li data-en>Register at the official Passport Seva website and create an account.</li>
+            <li data-en>Fill the passport application and pay the fee.</li>
+            <li data-en>Book an appointment at the nearest Passport Seva Kendra (PSK).</li>
+            <li data-en>We assist with form filling and document checks — click Apply.</li>
+            <li data-hi class="hide">आधिकारिक Passport Seva वेबसाइट पर रजिस्टर करें और अकाउंट बनाएं।</li>
+            <li data-hi class="hide">पासपोर्ट फॉर्म भरें और फीस का भुगतान करें।</li>
+            <li data-hi class="hide">नज़दीकी Passport Seva Kendra में अपॉइंटमेंट बुक करें।</li>
+            <li data-hi class="hide">हम फॉर्म भरने और दस्तावेज़ जांच में मदद करते हैं — Apply करें।</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:26px">
+      <div class="about">
+        <img src="https://placehold.co/600x400?text=Reyyan+Online+Solution" alt="Reyyan">
+        <div>
+          <h2 data-en>About Reyyan Online Solution</h2>
+          <h2 data-hi class="hide">Reyyan Online Solution के बारे में</h2>
+          <p data-en class="lead">We help people complete online government and digital forms quickly, accurately, and securely. Support in Hindi & English. Contact us on WhatsApp to start.</p>
+          <p data-hi class="lead hide">हम लोगों को सरकारी और डिजिटल फॉर्म ऑनलाइन जल्दी, सटीक और सुरक्षित तरीके से पूरा करने में मदद करते हैं। हिन्दी और अंग्रेज़ी में सहायता। शुरू करने के लिए WhatsApp करें।</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <h2 data-en>Contact / संपर्क करें</h2>
+      <div class="card" style="margin-top:12px">
+        <form id="contactForm">
+          <input type="text" id="cname" placeholder="Your name / आपका नाम" required />
+          <input type="email" id="cemail" placeholder="Email / ईमेल" required />
+          <select id="serviceSelect">
+            <option value="PAN">PAN Card / PAN कार्ड</option>
+            <option value="Passport">Passport / पासपोर्ट</option>
+            <option value="Aadhar">Aadhar Update / आधार अपडेट</option>
+            <option value="Other">Other / अन्य</option>
+          </select>
+          <textarea id="cmsg" rows="4" placeholder="Message / संदेश" required></textarea>
+          <div style="display:flex;gap:10px;align-items:center">
+            <button type="submit">Send / भेजें</button>
+            <a class="apply-btn" id="contactWhats" href="#">WhatsApp</a>
+          </div>
+          <div id="formMsg" style="margin-top:10px;color:var(--muted)"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Reyyan Online Solution — All rights reserved.</div>
+      <div style="color:var(--muted)">Phone: 9304833905 | Email: ansarihak40@gmail.com</div>
+    </div>
+  </footer>
+
+  <script>
+    // dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // WhatsApp link with prefilled message
+    const phone = '919304833905'; // international format
+    function makeWhatsAppUrl(service){
+      const msgEn = 'Hello Reyyan Online Solution, I want to apply for '+service+'. My name is [Your name]. Please assist.';
+      const msgHi = 'नमस्ते Reyyan Online Solution, मैं '+service+' के लिए आवेदन करना चाहता/चाहती हूँ। मेरा नाम [आपका नाम] है। कृपया मदद करें।';
+      const lang = localStorage.getItem('rey_lang') || 'en';
+      const text = lang === 'hi' ? msgHi : msgEn;
+      return 'https://wa.me/'+phone+'?text='+encodeURIComponent(text);
+    }
+
+    function setApplyLinks(){
+      document.getElementById('applyWhats').href = makeWhatsAppUrl('service');
+      document.getElementById('applyBtn').href = makeWhatsAppUrl('service');
+      document.getElementById('applyTop').href = makeWhatsAppUrl('service');
+      document.querySelectorAll('.service-apply').forEach(el=>{
+        el.href = makeWhatsAppUrl(el.closest('.item')?.querySelector('h3')?.innerText || 'service');
+      });
+      document.getElementById('contactWhats').href = makeWhatsAppUrl(document.getElementById('serviceSelect').value);
+    }
+
+    // Language toggle
+    const langToggle = document.getElementById('langToggle');
+    function setLanguage(lang){
+      localStorage.setItem('rey_lang', lang);
+      document.querySelectorAll('[data-en]').forEach(el=> el.style.display = lang==='en'? 'block':'none');
+      document.querySelectorAll('[data-hi]').forEach(el=> el.style.display = lang==='hi'? 'block':'none');
+      setApplyLinks();
+    }
+    // init
+    const saved = localStorage.getItem('rey_lang') || 'en';
+    setLanguage(saved);
+
+    langToggle.addEventListener('click', ()=>{
+      const newLang = (localStorage.getItem('rey_lang')||'en') === 'en' ? 'hi' : 'en';
+      setLanguage(newLang);
+    });
+
+    // contact form
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('cname').value;
+      const email = document.getElementById('cemail').value;
+      const service = document.getElementById('serviceSelect').value;
+      const msg = document.getElementById('cmsg').value;
+      // fallback: open mail client
+      const subject = encodeURIComponent('Service request: '+service);
+      const body = encodeURIComponent('Name: '+name+'\nEmail: '+email+'\nService: '+service+'\n\nMessage:\n'+msg);
+      window.location.href = 'mailto:ansarihak40@gmail.com?subject='+subject+'&body='+body;
+      document.getElementById('formMsg').textContent = 'Opening your email client to send the message. Or contact via WhatsApp.';
+    });
+
+    // update contact Whats when select changes
+    document.getElementById('serviceSelect').addEventListener('change', setApplyLinks);
+
+    // initialize apply links
+    setApplyLinks();
+  </script>
+</body>
+</html>
